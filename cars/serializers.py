@@ -6,7 +6,7 @@ class CarListSerializers(serializers.ModelSerializer):
     class Meta:
         """Выводит список из перечисленых значений"""
         model = Car
-        fields = ('id', 'vin', 'color', 'breand', 'user')
+        fields = ('id', 'vin', 'color', 'brand', 'user', 'is_published')
 
 
 class CarDetailSerializers(serializers.ModelSerializer):

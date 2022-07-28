@@ -1,8 +1,15 @@
 from django.contrib import admin
 from .models import Car
 
-# Register your models here.
-admin.site.register(Car)
+from django.contrib import admin
 
 
+class CarAdmin(admin.ModelAdmin):
+    """Вывод полей в админке"""
+    list_display = ('brand', 'vin', 'color', 'is_published')
+    # list_display_links = ('brand', 'vin')
+    search_fields = ('brand', 'vin')
+    save_on_top = True
 
+
+admin.site.register(Car, CarAdmin)

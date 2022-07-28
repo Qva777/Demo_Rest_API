@@ -25,6 +25,7 @@ class CarListView(generics.ListAPIView):
     queryset = Car.objects.all()
 
 
+
 class CarDetailView(generics.RetrieveUpdateDestroyAPIView):
     """Может изменять значения полей, только тот юзер который создал его"""
     serializer_class = CarDetailSerializers
