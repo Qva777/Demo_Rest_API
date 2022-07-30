@@ -20,6 +20,9 @@
 ####6 - Создать суперюзера, командой:
 `python manage.py createsuperuser`
 
-####7 - Запустить сервер, командой:
+####7 - Создать суперюзера, командой:
+`python manage.py createsuperuser`
+
+####8 - Запустить сервер, командой:
 `python manage.py runserver`
 
