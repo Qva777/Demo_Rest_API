@@ -15,14 +15,16 @@
 `pip install -r requirements.txt`
 
 ####5 - Выполнить мигрцию, командой:
-`python manage.py migrate`
+`python manage.py makemigrations`
 
-####6 - Создать суперюзера, командой:
-`python manage.py createsuperuser`
+####6 - Применить мигрцию, командой:
+`python manage.py migrate`
 
 ####7 - Создать суперюзера, командой:
 `python manage.py createsuperuser`
 
 ####8 - Запустить сервер, командой:
 `python manage.py runserver`
+
+
 
