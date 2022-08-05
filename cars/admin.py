@@ -4,6 +4,7 @@ from .models import Car
 from django.contrib import admin
 
 
+@admin.register(Car)
 class CarAdmin(admin.ModelAdmin):
     """Вывод полей в админке"""
     list_display = ('brand', 'vin', 'color', 'is_published')
@@ -12,4 +13,3 @@ class CarAdmin(admin.ModelAdmin):
     save_on_top = True
 
 
-admin.site.register(Car, CarAdmin)

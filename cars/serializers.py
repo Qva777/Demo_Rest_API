@@ -10,7 +10,7 @@ class CarListSerializers(serializers.ModelSerializer):
 
 
 class CarDetailSerializers(serializers.ModelSerializer):
-    # user = serializers.HiddenField(default=serializers.CurrentUserDefault())
+    user = serializers.HiddenField(default=serializers.CurrentUserDefault())
 
     class Meta:
         model = Car
