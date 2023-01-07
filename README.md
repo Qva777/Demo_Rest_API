@@ -10,12 +10,12 @@
 <h4>3 - In the Console, go to the root folder:</h4>
 <i>cd ../..</i>
 <h4>4 - Install libraries:</h4>
-<i>pip install -r requirements.txt</i>
+<pre>pip install -r requirements.txt</pre>
 <h4>5 - Run the migration:</h4> 
-<i>python manage.py makemigrations</i>
+<pre>python manage.py makemigrations</pre>
 <h4>6 - Apply migration:</h4> 
-<i>python manage.py migrate</i>
+<pre>python manage.py migrate</pre>
 <h4>7 - Create Superuser:</h4> 
-<i>python manage.py createsuperuser</i>
+<pre>python manage.py createsuperuser</pre>
 <h4>8 - Run server:</h4> 
-<i>python manage.py runserver</i>
+<pre>python manage.py runserver</pre>
